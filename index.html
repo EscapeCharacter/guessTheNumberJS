@@ -21,7 +21,9 @@
       }
     } else if (parseInt(guess) > randomNumber) {
       var guessLess = prompt('Try again. The number I am thinking of is less than ' + guess );
+      if (parseInt(guessLess) === randomNumber) {
       correctGuess = true;
+      }
     }
 
 
